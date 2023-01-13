@@ -1,0 +1,44 @@
+.hero {
+  padding: 20px 0;
+  height: 95vh;
+  background-size: auto;
+  background-position: center;
+  background-image: url('../../assets/images/Hero.jpg');
+  position: relative;
+}
+
+.map {
+  background-color: aquamarine;
+  width: 300px;
+  height: 300px;
+  margin: 50px auto 20px;
+  border-radius: 5px;
+}
+
+.heroHeading {
+  width: 100%;
+  max-width: 500px;
+  h1 {
+    font-size: 40px;
+    margin-left: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #fff;
+    line-height: 50px;
+  }
+}
+
+.mapInput {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  overflow: hidden;
+  padding: 20px 10px;
+  border-radius: 5px;
+
+  input {
+    width: 125px;
+  }
+}

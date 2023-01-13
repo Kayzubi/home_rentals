@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 /* reset browser default */
 html,
 body,
@@ -85,7 +87,7 @@ body {
   background: white;
   line-height: 1;
   color: black;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 section {
@@ -125,4 +127,8 @@ q {
 
 img {
   max-width: 100%;
+}
+
+.full-h {
+  height: 100%;
 }
