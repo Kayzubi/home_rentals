@@ -19,7 +19,7 @@ import Roomate from './images/Roomate.png'
 import safe from './images/safe.png'
 import Shower from './images/Shower.png'
 import Size from './images/Size.png'
-import testimonial from './images/testimonial.png'
+import testimonial from './images/testimonial.jpg'
 import User from './images/User.png'
 import logo from './images/logo.png'
 
