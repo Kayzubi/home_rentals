@@ -91,7 +91,7 @@ body {
 }
 
 section {
-  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 button {
@@ -131,4 +131,23 @@ img {
 
 .full-h {
   height: 100%;
+}
+
+.heading__secondary {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: capitalize;
+  position: relative;
+  width: max-content;
+  margin: 30px 0;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    left: 0;
+    bottom: -5px;
+    background-color: #f4511e;
+  }
 }
