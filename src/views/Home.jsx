@@ -4,6 +4,9 @@ import Features from '../components/Features/Features'
 import Hero from '../components/Hero/Hero'
 import PropertiesList from '../components/Properties/PropertiesList'
 
+import { motion } from 'framer-motion'
+import properties from '../properties'
+
 const Home = () => {
   return (
     <div>
@@ -13,10 +16,14 @@ const Home = () => {
         <Container>
           <div className='d-flex justify-content-between align-utems-center '>
             <h4 className='heading__secondary'>List of Properties</h4>
-            <button>View All Properties</button>
+            <span>
+              <motion.button whileTap={{ scale: 1.1 }} className='btn__primary'>
+                View All Properties
+              </motion.button>
+            </span>
           </div>
           <Row>
-            <PropertiesList />
+            <PropertiesList data={properties} />
           </Row>
         </Container>
       </section>
