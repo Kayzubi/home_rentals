@@ -1,0 +1,55 @@
+.propertyCard {
+  width: 100%;
+  max-width: 350px;
+  margin: 20px auto;
+  background: #fff;
+  border-radius: 26px;
+  overflow: hidden;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0px 34.0693px 36.1986px rgba(0, 0, 0, 0.133714);
+  }
+}
+
+.cardBody {
+  padding: 20px;
+}
+
+.propertyName {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.propertyInfo {
+  margin: 20px 0;
+
+  p {
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 300;
+    color: #818181;
+    margin: 5px 0;
+  }
+
+  h2 {
+    font-size: 23px;
+    font-weight: 700;
+    color: #f4511e;
+  }
+}
+
+.propertyActions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  span {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+    padding: 15px 10px;
+    border: 1px solid #e4e4e4;
+  }
+}
