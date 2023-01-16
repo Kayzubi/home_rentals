@@ -6,15 +6,15 @@ import ReactPaginate from 'react-paginate'
 const PropertiesList = ({ data }) => {
   const [currentPage, setCurrentPage] = useState(0)
 
-  const itemsPerpage = 3
+  const itemsPerpage = 6
   const visited = currentPage * itemsPerpage
   const pageCount = Math.ceil(data.length / itemsPerpage)
 
   const displayHouses = data
     .slice(visited, visited + itemsPerpage)
-    .map((item, index) => (
+    .map((item) => (
       <PropertyCard
-        key={index}
+        key={item.id}
         title={item.title}
         price={item.price}
         image={item.image}
@@ -28,7 +28,7 @@ const PropertiesList = ({ data }) => {
   return (
     <>
       {displayHouses}
-      <div>
+      <div className='mt-5 mb-4'>
         <ReactPaginate
           breakLabel={'...'}
           pageRangeDisplayed={2}

@@ -1,0 +1,42 @@
+.cta {
+  &__gallery {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.gallery {
+  position: relative;
+}
+
+.gallery-image {
+  position: relative;
+  width: max-content;
+  p {
+    position: absolute;
+    color: #fff;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 700;
+    width: 200px;
+    line-height: 25px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  &__2 {
+    top: 60px;
+    left: -20px;
+  }
+
+  &__4 {
+    left: -60px;
+  }
+}
+
+.cta_text {
+  line-height: 30px;
+  padding-right: 60px;
+}
