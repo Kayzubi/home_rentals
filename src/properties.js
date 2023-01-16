@@ -67,6 +67,30 @@ const properties = [
     title: '2578 Folsom street, san francisco, CA, 94110',
     price: 1200,
   },
+  {
+    id: '12',
+    image: images.Property4,
+    title: '2578 Folsom street, san francisco, CA, 94110',
+    price: 1200,
+  },
+  {
+    id: '13',
+    image: images.Property5,
+    title: '2578 Folsom street, san francisco, CA, 94110',
+    price: 1200,
+  },
+  {
+    id: '14',
+    image: images.Property6,
+    title: '2578 Folsom street, san francisco, CA, 94110',
+    price: 1200,
+  },
+  {
+    id: '15',
+    image: images.Property1,
+    title: '2578 Folsom street, san francisco, CA, 94110',
+    price: 1200,
+  },
 ]
 
 export default properties

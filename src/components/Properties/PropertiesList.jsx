@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import PropertyCard from '../PropertyCard/PropertyCard'
 import ReactPaginate from 'react-paginate'
+import { Row } from 'reactstrap'
 
 const PropertiesList = ({ data }) => {
   const [currentPage, setCurrentPage] = useState(0)
@@ -27,7 +28,9 @@ const PropertiesList = ({ data }) => {
 
   return (
     <>
-      {displayHouses}
+      <div className='housesBox'>
+        <Row>{displayHouses}</Row>
+      </div>
       <div className='mt-5 mb-4'>
         <ReactPaginate
           breakLabel={'...'}

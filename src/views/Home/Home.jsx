@@ -9,6 +9,8 @@ import { images } from '../../assets/images'
 import { motion } from 'framer-motion'
 import properties from '../../properties'
 import './home.scss'
+import PropertyForm from '../../components/PropertyForm/PropertyForm'
+import Footer from '../../components/Footer/Footer'
 
 const Home = () => {
   return (
@@ -25,9 +27,7 @@ const Home = () => {
               </motion.button>
             </span>
           </div>
-          <Row>
-            <PropertiesList data={properties} />
-          </Row>
+          <PropertiesList data={properties} />
         </Container>
       </section>
       <section className='cta'>
@@ -84,6 +84,8 @@ const Home = () => {
           </Row>
         </Container>
       </section>
+      <PropertyForm />
+      <Footer />
     </div>
   )
 }
