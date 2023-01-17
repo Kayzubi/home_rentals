@@ -50,34 +50,3 @@
     }
   }
 }
-
-.upload {
-  padding: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 0;
-  border: 2px dashed #f4511e;
-  border-radius: 10px;
-
-  label {
-    color: #f4511e;
-    font-weight: 700;
-    cursor: pointer;
-  }
-
-  input {
-    display: none;
-  }
-}
-
-.uploadText {
-  text-align: center;
-  color: #00000080;
-
-  p {
-    margin-bottom: 15px;
-    color: #000;
-    font-weight: 500;
-  }
-}

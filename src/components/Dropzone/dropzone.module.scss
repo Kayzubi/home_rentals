@@ -1,0 +1,33 @@
+.container {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 0;
+  border: 2px dashed #f4511e;
+  border-radius: 10px;
+}
+
+.dropzone {
+  width: 100%;
+  cursor: pointer;
+}
+
+.uploadText {
+  text-align: center;
+
+  p {
+    margin-bottom: 15px;
+    color: #000;
+    font-weight: 500;
+
+    &:last-child {
+      color: #00000080;
+    }
+    span {
+      color: #f4511e;
+      font-weight: 600;
+    }
+  }
+}

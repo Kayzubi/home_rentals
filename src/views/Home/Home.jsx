@@ -4,7 +4,7 @@ import Features from '../../components/Features/Features'
 import Hero from '../../components/Hero/Hero'
 import PropertiesList from '../../components/Properties/PropertiesList'
 
-import { images } from '../../assets/images'
+import { icons, images } from '../../assets/images'
 
 import { motion } from 'framer-motion'
 import properties from '../../properties'
@@ -85,6 +85,38 @@ const Home = () => {
         </Container>
       </section>
       <PropertyForm />
+      <section className='testimonials'>
+        <Container>
+          <Row>
+            <Col lg='6' className='d-flex flex-column justify-content-center'>
+              <div className='testimonial'>
+                <img className='quotes' src={icons.quotes} alt='' />
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                  interdum nisl et nunc facilisis, a commodo eros mollis. Nunc
+                  vel pellentesque est. Curabitur at odio sit amet libero
+                  vulputate efficitur ac nec justo. Nulla vitae mauris quam.
+                  Nulla quam massa, faucibus id pretium ac, mattis eu velit.
+                  Donec sed risus a lacus fringilla finibus.
+                </p>
+                <span className='user'>
+                  <img src={icons.User} alt='' />
+                  <h4>Harry Wilson</h4>
+                  <small>Property Owner</small>
+                </span>
+                <div className='slider'>
+                  <span className='slide__active slide'>{''}</span>
+                  <span className='slide'>{''}</span>
+                  <span className='slide'>{''}</span>
+                </div>
+              </div>
+            </Col>
+            <Col lg='6'>
+              <img src={images.testimonial} alt='' />
+            </Col>
+          </Row>
+        </Container>
+      </section>
       <Footer />
     </div>
   )

@@ -7,7 +7,7 @@ import { Row } from 'reactstrap'
 const PropertiesList = ({ data }) => {
   const [currentPage, setCurrentPage] = useState(0)
 
-  const itemsPerpage = 6
+  const itemsPerpage = 3
   const visited = currentPage * itemsPerpage
   const pageCount = Math.ceil(data.length / itemsPerpage)
 

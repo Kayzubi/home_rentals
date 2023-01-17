@@ -3,7 +3,13 @@ import { Container } from 'reactstrap'
 import { motion } from 'framer-motion'
 import styles from './propertyForm.module.scss'
 
+import Dropzone from '../Dropzone/Dropzone'
+
 const PropertyForm = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault()
+  }
+
   return (
     <section className={styles.propertyForm}>
       <Container>
@@ -14,7 +20,7 @@ const PropertyForm = () => {
 
         <div className={styles.formContainer}>
           <h2 className={styles.formHeading}>Add A New Property</h2>
-          <form action='#'>
+          <form action='#' onSubmit={handleSubmit}>
             <div className={styles.formFamily}>
               <div className={styles.formGroup}>
                 <label htmlFor='name'>Name</label>
@@ -58,20 +64,13 @@ const PropertyForm = () => {
                 rows='10'
                 placeholder='Enter Description'></textarea>
             </div>
-            <div className={styles.upload}>
-              <span className={styles.uploadText}>
-                <p>
-                  Drag your images here, or{' '}
-                  <label htmlFor='upload'> browse</label>
-                </p>
-                <span>Supported: JPG, JPEG, PNG</span>
-              </span>
 
-              <input type='file' name='' id='upload' />
-            </div>
+            <Dropzone accept={'image/*'} />
+
             <div className='text-center mt-5 mb-5'>
               <motion.button
                 whileTap={{ scale: 1.1 }}
+                type='submit'
                 className='btn__primary px-5 py-4'>
                 Add new property
               </motion.button>

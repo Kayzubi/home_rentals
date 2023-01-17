@@ -22,6 +22,7 @@ import Size from './images/Size.png'
 import testimonial from './images/testimonial.jpg'
 import User from './images/User.png'
 import logo from './images/logo.png'
+import quotes from './images/quotes.png'
 
 export const images = {
   Hero,
@@ -51,4 +52,5 @@ export const icons = {
   environment,
   community,
   logo,
+  quotes,
 }
