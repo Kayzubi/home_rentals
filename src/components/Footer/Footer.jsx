@@ -20,7 +20,7 @@ const Footer = () => {
       <Container>
         <Row className={styles.row}>
           <Col lg='6'>
-            <div>
+            <div className='mb-5'>
               <img src={icons.logo} alt='' />
             </div>
           </Col>
@@ -30,7 +30,7 @@ const Footer = () => {
                 <MdLocationPin size='20px' color='white' />
                 <p>345 Faulconer Drive, Suite 4 • Charlottesville, CA, 12345</p>
               </span>
-              <div className='d-flex gap-5 align-items-center mt-4'>
+              <div className='d-flex gap-3 align-items-center mt-4'>
                 <span className='d-flex gap-3 align-items-center text-white'>
                   <MdPhone color='white' size='20px' />
                   <p>(123) 456-7890</p>

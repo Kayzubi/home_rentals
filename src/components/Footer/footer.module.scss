@@ -1,3 +1,5 @@
+@use '../../breakpoints.scss' as breakpoints;
+
 .footer {
   background-color: #f4511e;
   padding: 50px 0;
@@ -41,5 +43,18 @@
   span {
     color: #fff;
     font-size: 12px;
+  }
+}
+
+@include breakpoints.tablet {
+  .footerBottom,
+  .footerBottom ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .info {
+    width: 100%;
   }
 }
