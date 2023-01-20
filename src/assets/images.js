@@ -23,6 +23,7 @@ import testimonial from './images/testimonial.jpg'
 import User from './images/User.png'
 import logo from './images/logo.png'
 import quotes from './images/quotes.png'
+import map from './images/Rectangle 1.png'
 
 export const images = {
   Hero,
@@ -38,6 +39,7 @@ export const images = {
   Property6,
   Roomate,
   testimonial,
+  map,
 }
 
 export const icons = {

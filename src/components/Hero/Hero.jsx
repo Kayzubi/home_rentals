@@ -3,6 +3,7 @@ import Header from '../Header/Header'
 import { Container, Row, Col } from 'reactstrap'
 import styles from './hero.module.scss'
 import { FaSearch } from 'react-icons/fa'
+import { images } from '../../assets/images'
 
 const Hero = () => {
   return (
@@ -19,7 +20,9 @@ const Hero = () => {
           </Col>
           <Col lg='4' className='d-flex align-items-center'>
             <div>
-              <div className={styles.map}>map</div>
+              <div className={styles.map}>
+                <img src={images.map} alt='' />
+              </div>
               <div>
                 <div className={styles.mapInput}>
                   <input type='text' placeholder='All text' disabled />
